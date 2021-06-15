@@ -1,0 +1,3 @@
+<?php
+
+$GLOBALS['TL_JAVASCRIPT'][] = 'web/bundles/contaoclickpressjs/backtotop.js|static';

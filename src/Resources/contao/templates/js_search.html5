@@ -1,0 +1,3 @@
+<?php
+
+$GLOBALS['TL_JAVASCRIPT'][] = 'web/bundles/contaoclickpressjs/search.js|static';
