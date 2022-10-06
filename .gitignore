@@ -5,5 +5,5 @@
 # PhpUnit
 /phpunit.xml
 
-.git
-.idea
+.git/
+.idea/
