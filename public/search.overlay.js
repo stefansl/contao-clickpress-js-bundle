@@ -10,7 +10,7 @@
   'use strict';
 
 // Search
-  var elSearchTrigger = document.getElementById('searchtrigger'),
+  var elSearchTrigger = document.getElementById('search-trigger'),
     elSearch = document.getElementById('search'),
     btnCloseSearch = document.getElementById('close-search'),
     wrapper = document.getElementById('wrapper'),
