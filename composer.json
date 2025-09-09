@@ -1,7 +1,7 @@
 {
     "name": "stefansl/contao-clickpress-js-bundle",
     "type": "contao-bundle",
-    "description": "JS templates for Contao4",
+    "description": "JS templates for Contao 5",
     "license": "LGPL-3.0-or-later",
     "authors": [
         {
