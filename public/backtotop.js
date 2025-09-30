@@ -4,12 +4,12 @@
  */
 
 (function () {
-  "use strict";
 
   const btnBackToTop = document.getElementById("back-to-top");
 
+  console.log(btnBackToTop);
   const backToTop = function () {
-    if (200 >= window.scrollY) {
+    if (800 >= window.scrollY) {
       btnBackToTop.classList.remove("is-visible");
     } else {
       btnBackToTop.classList.add("is-visible");
@@ -22,5 +22,15 @@
   }
 
   btnBackToTop.addEventListener("click", scrollToTop);
+
+    window.addEventListener(
+        "scroll",
+        function () {
+            requestAnimationFrame(backToTop);
+        }, {
+            capture: true,
+            passive: true
+        }
+    );
 
 })();
