@@ -1,3 +1,5 @@
 <?php
 
-$GLOBALS['TL_JAVASCRIPT'][] = 'public/bundles/contaoclickpressjs/backtotop.js|static';
+use Contao\Template;
+
+$GLOBALS['TL_BODY'][] = Template::generateScriptTag('bundles/contaoclickpressjs/backtotop.js', false, null);
