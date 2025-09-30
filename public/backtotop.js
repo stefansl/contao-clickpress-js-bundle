@@ -6,9 +6,9 @@
 (function () {
   "use strict";
 
-  let btnBackToTop = document.getElementById("back-to-top");
+  const btnBackToTop = document.getElementById("back-to-top");
 
-  let backToTop = function () {
+  const backToTop = function () {
     if (200 >= window.scrollY) {
       btnBackToTop.classList.remove("is-visible");
     } else {
