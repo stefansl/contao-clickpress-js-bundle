@@ -5,23 +5,22 @@
 
 (function () {
 
-  const btnBackToTop = document.getElementById("back-to-top");
+    const btnBackToTop = document.getElementById("back-to-top");
 
-  console.log(btnBackToTop);
-  const backToTop = function () {
-    if (800 >= window.scrollY) {
-      btnBackToTop.classList.remove("is-visible");
-    } else {
-      btnBackToTop.classList.add("is-visible");
+    const backToTop = function () {
+        if (800 >= window.scrollY) {
+            btnBackToTop.classList.remove("is-visible");
+        } else {
+            btnBackToTop.classList.add("is-visible");
+        }
+    };
+
+    function scrollToTop(e) {
+        e.preventDefault();
+        window.scroll({top: 0, left: 0, behavior: "smooth"});
     }
-  };
 
-  function scrollToTop(e) {
-    e.preventDefault();
-    window.scroll({top: 0, left: 0, behavior: "smooth"});
-  }
-
-  btnBackToTop.addEventListener("click", scrollToTop);
+    btnBackToTop.addEventListener("click", scrollToTop);
 
     window.addEventListener(
         "scroll",
